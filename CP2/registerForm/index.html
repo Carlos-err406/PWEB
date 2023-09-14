@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registerForm.css">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <center>
+        <p id="data-fill"">Fill in your data in the next form</p>
+        <div class="main-wrapper">
+            <div class="form-header">
+                <p>New user data</p>
+            </div>
+            <form id="register-form" method="post" action="">
+                <div class="form-input-wrapper">
+                    <label for="name">Nombre y apellido:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-input-wrapper">
+                    <label for="sex">Sexo:</label>
+                    <select name="sex" id="sex">
+                        <option value="null">Select</option>
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                    </select>
+                </div>
+                <div class="form-input-wrapper">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-input-wrapper">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-input-wrapper">
+                    <label for="password-confirm">Password Confirm:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-input-wrapper ">
+                    <label for="get-news">Get daily news:</label>
+                    <input type="checkbox" class="get-daily-news" name="get-news" id="get-news">
+                </div>
+                <div class="form-input-wrapper">
+                    <button type="submit">Send</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
