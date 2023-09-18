@@ -1,0 +1,9 @@
+.form-body{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form{
+    width: fit-content;
+}
