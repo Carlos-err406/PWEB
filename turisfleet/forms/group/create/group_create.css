@@ -1,9 +1,9 @@
-.form-body{
+.form-body {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.form{
+.form {
     width: fit-content;
 }
