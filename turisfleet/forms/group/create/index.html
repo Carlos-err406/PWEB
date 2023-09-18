@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../global.css">
+    <link rel="stylesheet" href="../../../css/forms.css">
+    <link rel="stylesheet" href="./group_create.css">
+    <script src="./group_create.js"></script>
+    <title>Turisfleet | Forms | Create Group</title>
+</head>
+
+<body>
+    <div class="form-base-container">
+        <div class="form">
+            <form action="" onsubmit="onSubmit(event)">
+                <div class="form-header">
+                    <h1>Create Group</h1>
+                    <button type="button" onclick="onClose(event)" class="button img">
+                        <img src="../../../img/close-square.svg" height="35" alt="close" />
+                    </button>
+                </div>
+                <div class="form-body">
+                    <div class="form-body">
+                        <div class="input-container">
+                            <label for="">Country *</label>
+                            <select id="group-create-countries-dropdown" required>
+                                <!-- options populated by js -->
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label for="">Tourist amount *</label>
+                            <input id="group-create-trourist-ammount-input" required type="number"
+                                placeholder="tourist amount" min="1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <div class="buttons-container">
+                        <button type="button" onclick="onClose(event)" class="button secondary">Close</button>
+                        <button type="submit" class="button primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
