@@ -1,0 +1,17 @@
+  .form-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+  }
+
+  input {
+      width: 100%;
+  }
+
+  .input-container {
+      width: 90%;
+  }

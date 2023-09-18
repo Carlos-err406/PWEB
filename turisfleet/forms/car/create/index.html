@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../global.css">
+    <link rel="stylesheet" href="../../../css/forms.css">
+    <link rel="stylesheet" href="./car_create.css">
+    <script src="./car_create.js"></script>
+    <title>Turisfleet | Forms | Create Car</title>
+</head>
+
+<body onload="onLoad()">
+    <div class="form-base-container">
+        <div class="form">
+            <form action="" onsubmit="onSubmit(event)">
+                <div class="form-header">
+                    <h1>Create Car</h1>
+                    <button type="button" onclick="onClose(event)" class="button img">
+                        <img src="../../../img/close-square.svg" height="35" alt="close" />
+                    </button>
+                </div>
+                <div class="form-body">
+                    <div class="form-body">
+                        <div class="input-container">
+                            <label for="">Plate Number *</label>
+                            <input required type="text" id="car-create-plate-number-input" placeholder="plate number"
+                                max="255" />
+                        </div>
+                        <div class="input-container">
+                            <label for="">Brand *</label>
+                            <input required type="text" id="car-create-brand-input" placeholder="brand" max="255" />
+                        </div>
+                        <div class="input-container">
+                            <label for="">Category *</label>
+                            <select name="" id="car-create-categories-dropdown" onchange="filterDrivers()">
+
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label for="">Seat amount *</label>
+                            <input required type="number" id="car-create-seat-amount-input" value="1" min="1" max="300"
+                                placeholder="seat amount" />
+                        </div>
+                        <div class="input-container">
+                            <label for="">Available KM *</label>
+                            <input required type="number" id="car-create-available-km-input" value="0" min="0"
+                                max="10000" placeholder="available km" />
+                        </div>
+                        <div class="input-container">
+                            <label for="">Driver *</label>
+                            <select name="" id="car-create-drivers-dropdown" required>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <div class="buttons-container">
+                        <button type="button" onclick="onClose(event)" class="button secondary">Close</button>
+                        <button type="submit" class="button primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
