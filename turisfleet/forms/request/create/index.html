@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../global.css">
+    <link rel="stylesheet" href="../../../css/forms.css">
+    <link rel="stylesheet" href="request_create.css">
+    <title>Turisfleet | Forms | Create Request</title>
+</head>
+<body onload="onLoad()">
+  <div class="form-base-container">
+    <div class="form">
+      <form action="">
+        <div class="form-header">
+          <h1>Insert Request</h1>
+          <button type="button" onclick="onClose(event)" class="button img">
+              <img src="../../../img/close-square.svg" height="35" alt="close" />
+          </button>
+        </div>
+        <div class="form-body">
+            <div class="input-container">
+              <label for="specific-program-selector">Specific Program *</label>
+              <select name="" id="specific-program-selector">
+              </select>
+            </div>
+            <div class="input-container">
+              <label for="group-selector">Group *</label>
+              <select name="" id="group-selector"></select>
+            </div>
+            <div class="input-container">
+              <label for="tourist-amount">Tourist amount *</label>
+              <input required type="number" min="1" max="50" id="tourist-amount"/>
+            </div>
+            <div class="input-container">
+              <label for="date">Start Date *</label>
+              <input required type="date" id="date"/>
+            </div>
+            <div class="form-footer">
+              <div class="buttons-container">
+                  <button type="button" onclick="onClose(event)" class="button secondary">Cancel</button>
+                  <button type="submit" onclick="onSubmit(event)" class="button primary">Insert Request</button>
+              </div>
+          </div>
+         </div>
+       </form>
+      </div>
+    </div>
+    <script src="request_create.js"></script>
+</body>
+</html>
