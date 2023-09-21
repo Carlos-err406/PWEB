@@ -3,18 +3,18 @@ const onLoad = async () => {
     let specific_programs = await r.json()
     r = await fetch("../../../data/groups.json")
     let groups = await r.json()
-    let specific_program_selector = document.getElementById("specific-program-selector")
-    let group_selector = document.getElementById("group-selector")
+    let specific_program_selector = document.getElementById("request-select-specific-program-input")
+    let group_selector = document.getElementById("request-select-group-input")
     specific_programs.forEach(element => {
         let option = document.createElement('option')
-        option.value = element
-        option.text = element
+        option.value = element.id
+        option.text = element.city + ": " + element.description
         specific_program_selector.appendChild(option)
     });
     groups.forEach(element => {
         let option = document.createElement('option')
-        option.value = element
-        option.text = element
+        option.value = element.id
+        option.text = element.country
         group_selector.appendChild(option)
     });
 }
@@ -26,10 +26,10 @@ const onClose = (event) => {
 
 const onSubmit = (event) => {
     event.preventDefault();
-    let specific_program = document.getElementById("specific-program-selector")
-    let group = document.getElementById('group-selector')
-    let tourist_amount = document.getElementById('tourist-amount')
-    let date = document.getElementById('date')
+    let specific_program = document.getElementById("request-select-specific-program-input")
+    let group = document.getElementById('request-select-group-input')
+    let tourist_amount = document.getElementById('request-create-tourist-amount-input')
+    let date = document.getElementById('request-create-date-input')
     
     console.log("Specific Program:", specific_program.value);
     console.log("Group:", group.value);
