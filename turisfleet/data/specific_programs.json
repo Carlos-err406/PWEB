@@ -1,12 +1,12 @@
 [
-"Santiago de Cuba: Visit the historic Castillo de San Pedro de la Roca",
-"Viñales: Explore the lush tobacco fields",
-"Varadero: Relax on pristine white sand beaches ",
-"Havana: Discover the vibrant culture and history ",
-"Trinidad: Step back in time in this colonial town ",
-"Cienfuegos: Admire the stunning architecture",
-"Santa Clara: Visit the Che Guevara Mausoleum",
-"Holguin: Enjoy nature in the nearby parks and reserves",
-"Camaguey: Explore the historic churches and plazas",
-"Pinar del Rio: Visit a cigar factory and learn about the process"
+    {"id": "0", "city": "Santiago de Cuba", "description": "Visit the historic Castillo de San Pedro de la Roca"},
+    {"id": "1", "city": "Viñales", "description": "Explore the lush tobacco fields"},
+    {"id": "2", "city": "Varadero", "description": "Relax on pristine white sand beaches "},
+    {"id": "3", "city": "Havana", "description": "Discover the vibrant culture and history "},
+    {"id": "4", "city": "Trinidad", "description": "Step back in time in this colonial town "},
+    {"id": "5", "city": "Cienfuegos", "description": "Admire the stunning architecture"},
+    {"id": "6", "city": "Santa Clara", "description": "Visit the Che Guevara Mausoleum"},
+    {"id": "7", "city": "Holguin", "description": "Enjoy nature in the nearby parks and reserves"},
+    {"id": "8", "city": "Camaguey", "description": "Explore the historic churches and plazas"},
+    {"id": "9", "city": "Pinar del Rio", "description": "Visit a cigar factory and learn about the process"}
 ]
