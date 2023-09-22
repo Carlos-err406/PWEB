@@ -1,0 +1,32 @@
+[
+    {
+        "id": 10,
+        "situation": "inside the country",
+        "type": "CD"
+    },
+    {
+        "id": 11,
+        "situation": "working in the city",
+        "type": "CD"
+    },
+    {
+        "id": 12,
+        "situation": "workshop",
+        "type": "CD"
+    },
+    {
+        "id": 13,
+        "situation": "vacations",
+        "type": "D"
+    },
+    {
+        "id": 14,
+        "situation": "franc",
+        "type": "D"
+    },
+    {
+        "id": 15,
+        "situation": "other",
+        "type": "D"
+    }
+]

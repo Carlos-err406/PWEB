@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../global.css">
+    <link rel="stylesheet" href="../../../css/forms.css">
+    <link rel="stylesheet" href="./create_driver_situation.css">
+    <script src="./create_driver_situation.js"></script>
+    <title>Turisfleet | Forms | Create driver situation</title>
+</head>
+
+<body onload="onLoad()">
+    <div class="form-base-container">
+        <div class="form">
+            <form action="" onsubmit="onSubmit(event)">
+                <div class="form-header">
+                    <h1>Create Driver Situation</h1>
+                    <button type="button" onclick="onClose(event)" class="button img">
+                        <img src="../../../img/close-square.svg" height="35" alt="close" />
+                    </button>
+                </div>
+                <div class="form-body">
+                    <div class="input-container">
+                        <label for="driver-situation-create-drivers-dropdown">Driver *</label>
+                        <select name="" id="driver-situation-create-drivers-dropdown">
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="driver-situation-create-situations-dropdown">Situation *</label>
+                        <select name="" id="driver-situation-create-situations-dropdown">
+
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="driver-situation-create-date-input">Date *</label>
+                        <input id="driver-situation-create-date-input" type="date" required placeholder="date" />
+                    </div>
+                    <div class="input-container">
+                        <label for="driver-situation-create-return-date-input">Return date *</label>
+                        <input id="driver-situation-create-return-date-input" type="date" required placeholder="date" />
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <div class="buttons-container">
+                        <button type="button" onclick="onClose(event)" class="button secondary">Close</button>
+                        <button type="submit" class="button primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>
