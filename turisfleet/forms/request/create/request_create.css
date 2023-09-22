@@ -1,18 +1,6 @@
 .form-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    gap: 16px;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  input {
-    width: 100%;
-  }
-  .input-container {
-    width: 90%;
-  }
-  .program {
-    width: 300px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}

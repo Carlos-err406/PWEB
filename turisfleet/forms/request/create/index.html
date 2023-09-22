@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../global.css">
-    <link rel="stylesheet" href="../../../css/forms.css">
-    <link rel="stylesheet" href="request_create.css">
-    <title>Turisfleet | Forms | Create Request</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../global.css">
+  <link rel="stylesheet" href="../../../css/forms.css">
+  <link rel="stylesheet" href="./request_create.css">
+  <script src="request_create.js"></script>
+  <title>Turisfleet | Forms | Create Request</title>
 </head>
+
 <body onload="onLoad()">
   <div class="form-base-container">
     <div class="form">
-      <form action="">
+      <form action="" onsubmit="onSubmit(event)">
         <div class="form-header">
           <h1>Insert Request</h1>
           <button type="button" onclick="onClose(event)" class="button img">
-              <img src="../../../img/close-square.svg" height="35" alt="close" />
+            <img src="../../../img/close-square.svg" height="35" alt="close" />
           </button>
         </div>
         <div class="form-body">
-            <div class="input-container">
-              <label for="request-select-specific-program-input">Specific Program *</label>
-              <select name="" id="request-select-specific-program-input">
-              </select>
-            </div>
-            <div class="input-container">
-              <label for="request-select-group-input">Group *</label>
-              <select name="" id="request-select-group-input"></select>
-            </div>
-            <div class="input-container">
-              <label for="request-create-tourist-amount-input">Tourist amount *</label>
-              <input required type="number" min="1" max="50" id="request-create-tourist-amount-input"/>
-            </div>
-            <div class="input-container">
-              <label for="request-create-date-input">Start Date *</label>
-              <input required type="date" id="request-create-date-input"/>
-            </div>
-            <div class="form-footer">
-              <div class="buttons-container">
-                  <button type="button" onclick="onClose(event)" class="button secondary">Cancel</button>
-                  <button type="submit" onclick="onSubmit(event)" class="button primary">Insert Request</button>
-              </div>
+          <div class="input-container">
+            <label for="request-select-specific-program-input">Specific Program *</label>
+            <select name="" id="request-select-specific-program-input">
+            </select>
           </div>
-         </div>
-       </form>
-      </div>
+          <div class="input-container">
+            <label for="request-select-group-input">Group *</label>
+            <select name="" id="request-select-group-input"></select>
+          </div>
+          <div class="input-container">
+            <label for="request-create-tourist-amount-input">Tourist amount *</label>
+            <input required type="number" min="1" max="50" value="1" id="request-create-tourist-amount-input" />
+          </div>
+          <div class="input-container">
+            <label for="request-create-date-input">Start Date *</label>
+            <input required type="date" id="request-create-date-input" />
+          </div>
+        </div>
+        <div class="form-footer">
+          <div class="buttons-container">
+            <button type="button" onclick="onClose(event)" class="button secondary">Cancel</button>
+            <button type="submit" class="button primary">Submit</button>
+          </div>
+        </div>
+      </form>
     </div>
-    <script src="request_create.js"></script>
+  </div>
 </body>
+
 </html>
