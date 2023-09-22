@@ -1,10 +1,14 @@
 let drivers = []
 let license_categories = []
+const loadJSONData = async (fileName) => {
+    let r = await fetch(`../../../data/${fileName}.json`)
+    return await r.json()
+}
 const onLoad = async () => {
-    let r = await fetch("../../../data/drivers.json")
-    drivers = await r.json()
-    r = await fetch("../../../data/license_categories.json")
-    license_categories = await r.json()
+    let driversPromise = loadJSONData('drivers')
+    let licensePromise = loadJSONData('license_categories')
+    drivers = await driversPromise
+    license_categories = await licensePromise
     let categoriesDropdown = document.getElementById("car-create-categories-dropdown")
     license_categories.forEach((name) => {
         const option = document.createElement('option')
